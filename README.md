@@ -17,3 +17,14 @@ Docker/Python3/FastAPI/MySQL/Vueで作成
 ### ステップ1: DB構築
 #### init.sqlの作成
 DBコンテナを立ち上げた際に、テーブル作成を行うために作成
+
+#### Dockerfileの作成
+##### imageをbuild
+```ターミナル
+docker build -t todo-mysql:1.0.0 .
+```
+##### コンテナを起動
+```ターミナル
+docker run -d --name todo-mysql-container -p 3306:3306 todo-mysql:1.0.0
+```
+
