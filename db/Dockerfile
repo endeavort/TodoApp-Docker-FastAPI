@@ -4,8 +4,8 @@ FROM mysql:latest
 
 # 環境変数の設定
 ENV MYSQL_DATABASE todo_db
-ENV MYSQL_USER sample_user
-ENV MYSQL_PASSWORD sample_password
+ENV MYSQL_USER user
+ENV MYSQL_PASSWORD password
 ENV TZ "Asia/Tokyo"
 ENV MYSQL_ROOT_PASSWORD p@assw0rd
 
